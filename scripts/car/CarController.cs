@@ -1,4 +1,5 @@
 using UnityEngine;
+using Scripts.Effects;
 
 namespace Scripts.Car
 {
