@@ -25,6 +25,11 @@ namespace Scripts.Car
         [Space]
         [Header("Smoke Effect")]
         [SerializeField] private float _smokeEffectSensitivity;
+        [Space]
+        [Header("UI")]
+        [SerializeField] private FixedJoystick _joystick;
+
+        private bool _isMobilePlatform;
 
         private CarMovement _carMovement;
         private CarBrake _carBrake;
@@ -33,10 +38,6 @@ namespace Scripts.Car
 
         private float _horizontalInput;
         private float _verticalInput;
-
-        [Space]
-        [SerializeField] private FixedJoystick _joystick;
-        private bool _isMobilePlatform;
 
         public void Initialize()
         {
