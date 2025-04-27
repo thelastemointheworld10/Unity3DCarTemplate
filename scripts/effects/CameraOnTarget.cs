@@ -32,6 +32,11 @@ namespace Scripts.Effects
 
         private void CheckValues()
         {
+            if (_car == null)
+            {
+                Debug.LogError("In CameraOnTarget.cs: _car is null!");
+                this.enabled = false;
+            }
             /*
              * I do not turn off the script and do not log it as an error,
              * because the zero values of these fields can be used to create
