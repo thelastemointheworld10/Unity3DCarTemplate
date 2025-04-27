@@ -4,7 +4,6 @@ using Scripts.Effects;
 namespace Scripts.Car
 {
     [RequireComponent(typeof(Rigidbody))]
-    [RequireComponent(typeof(EngineSounds))]
     public sealed class CarController : MonoBehaviour
     {
         private Rigidbody _rigidbody;
